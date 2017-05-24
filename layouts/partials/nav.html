@@ -1,6 +1,6 @@
 <nav class="main-nav">
 	{{ if not .IsHome }}
-		<a href='{{ .Site.BaseURL }}'> <span class="arrow">←</span>{{ .Site.Params.home | default "Home" }}</a>
+		<a href='{{ .Site.BaseURL }}'> <span class="arrow">←</span>&nbsp;{{ .Site.Params.home | default "Home" }}</a>
 	{{ end }}
 
 	{{ range .Site.Menus.main }}

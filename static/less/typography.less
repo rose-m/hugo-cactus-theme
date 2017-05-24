@@ -1,0 +1,62 @@
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: 1.2em;
+  color: @color-text;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+ul, ol {
+  margin: 0 0 1.25em 0;
+  padding: 0;
+
+  ul, ol {
+    margin: 0 0 0 1em;
+    list-style-position: outside;
+  }
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: @color-heading;
+  font-weight: bold;
+}
+
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+h1 {
+  font-size: @font-size-base * 2;
+  letter-spacing: -1px;
+}
+h2 {
+  font-size: @font-size-base * 1.5;
+}
+h3 {
+  font-size: @font-size-base * 1.25;
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+h4 {
+  font-size: @font-size-base;
+}
+
+h5, h6 {
+  color:  @color-text;
+}
+h5 {
+  font-size: @font-size-base * 0.9;
+}
+h6 {
+  font-size: @font-size-base * 0.8;
+}
