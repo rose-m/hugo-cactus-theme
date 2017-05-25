@@ -1,7 +1,15 @@
 @color-text: #666;
-@color-heading: #222;
+@color-text-light: lighten(@color-text, 15%);
+@color-text-dark: darken(@color-text, 15%);
+@color-heading: @color-text-dark;
 @color-primary: #5badf0;
 @color-primary-contrast: #fff;
 
+@color-border: #eee;
+
 @font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-size-base: 16px;
+@font-size-small: 13px;
+@font-weight-light: 300;
+
+@base-margin: 20px;

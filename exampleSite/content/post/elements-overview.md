@@ -3,7 +3,7 @@ author: "Michael Rose"
 date: 2017-05-23
 linktitle: "HTML Elements Overview"
 title: "HTML Elements Overview"
-description: "An overview of all relevant HTML elements for themeing"
+description: "An overview of all relevant HTML elements for theming"
 ---
 
 # Heading 1
@@ -50,6 +50,8 @@ Note that this line is separate, but within the same paragraph. (This is contrar
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+
+Another test for margins and paddings.
 
 ---
 

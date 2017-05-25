@@ -8,6 +8,13 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.text-light {
+  color: @color-text-light;
+}
+.text-dark {
+  color: @color-text-dark;
+}
+
 ul, ol {
   margin: 0 0 1.25em 0;
   padding: 0;
@@ -26,12 +33,10 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
   color: @color-heading;
-  font-weight: bold;
 }
 
-
 h1, h2, h3 {
-  font-weight: 400;
+  font-weight: @font-weight-light;
 }
 h1 {
   font-size: @font-size-base * 2;

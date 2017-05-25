@@ -23,8 +23,8 @@
     {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
     <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
     <div class="author-details">
-        <span class="dark">{{ .Site.Params.name }}</span>
-        <span>{{ .Site.Params.aboutAuthor }}</span>
+        <span class="text-dark">{{ .Site.Params.name }}</span>
+        <span class="text-light">{{ .Site.Params.aboutAuthor }}</span>
     </div>
     {{ with .Site.Params.twitter }}</a>{{ end }}
     <section class="sharing">
