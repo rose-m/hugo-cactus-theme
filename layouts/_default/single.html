@@ -19,16 +19,29 @@
     </section>
 </article>
 
-<footer id="post-meta" class="clearfix">
+<footer class="post-meta">
     {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
     <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
-    <div>
+    <div class="author-details">
         <span class="dark">{{ .Site.Params.name }}</span>
         <span>{{ .Site.Params.aboutAuthor }}</span>
     </div>
     {{ with .Site.Params.twitter }}</a>{{ end }}
-    <section id="sharing">
-        {{ partial "share.html" . }}
+    <section class="sharing">
+        <a class="twitter"
+           href="https://twitter.com/intent/tweet?text={{ .Permalink }} - {{ .LinkTitle }} {{ with .Site.Params.twitter }}by @{{ . }}{{ end }}">
+            <span class="icon-twitter"></span>&nbsp;{{ .Site.Params.tweet | default "Tweet" }}
+        </a>
+
+        <a class="facebook" href="#"
+           onclick="window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;">
+            <span class="icon-facebook-rect"></span>&nbsp;{{ .Site.Params.share | default "Share" }}
+        </a>
+
     </section>
 </footer>
 
