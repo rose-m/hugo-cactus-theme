@@ -18,107 +18,8 @@ html, body {
 @import "profile";
 @import "single";
 @import "post-list";
-
-/* Typography */
-/*Accent color*/
-a,
-#title,
-#post-list a:hover,
-#post-list li:hover .dates,
-#title:hover {
-  text-decoration: none;
-  color: #5badf0;
-  color: #5694f1;
-}
-
-p a {
-  color: #5694f1;
-}
-
-/*Transitions*/
-a,
-#post-nav a,
-#post-list a {
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -ms-transition: all 0.15s ease;
-  -o-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-}
-
-/* Line Height */
-#post-body, p {
-  line-height: 1.7;
-}
-
-b, strong {
-  font-weight: 500;
-  color: #1E2025;
-}
-
-em, i {
-  font-style: italic;
-}
-
-#title {
-  display: inline-block;
-  line-height: 100%;
-  font-weight: 500;
-  font-size: 19px;
-  margin: 0;
-  padding-bottom: 20px;
-}
-
-.description {
-  float: right;
-  font: italic 14px/1.4em Georgia, serif;
-  color: #aaa;
-}
-
-p.small {
-  color: #bbb;
-  font-size: 14px;
-  line-height: 1.5;
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-
-blockquote {
-  padding-left: 15px;
-  border-left: 3px solid #eee;
-}
-
-hr {
-  display: block;
-  border: none;
-  height: 1px;
-  margin: 40px auto;
-  background: #eee;
-}
-
-span.code {
-  font-family: Menlo, Monaco, Courier;
-  background-color: #EEE;
-  font-size: 14px;
-}
-
-pre {
-  font-family: Menlo, Monaco, Courier;
-  white-space: pre-wrap;
-  /*border: 1px solid #ddd;*/
-  padding: 20px;
-  background-color: #f8f8f8;
-  /*font-size:14px;*/
-  overflow: auto;
-  border-radius: 3px;
-  font-family: 'Source Code Pro', Menlo, monospace;
-  font-size: 13px;
-  line-height: 1.5em;
-  font-weight: 500;
-  color: #d0d4d7;
-
-}
+@import "pagination";
+@import "footer";
 
 table {
   width: 100%;
@@ -170,51 +71,7 @@ img {
   padding: 40px 0 0 0;
 }
 
-/* Post Navigation */
-#post-nav {
-  text-align: center;
-  font-size: 13px;
-  font-weight: 500;
-  margin-top: 20px;
-}
 
-#post-nav span {
-  -webkit-transition: all 0.1s linear;
-  -moz-transition: all 0.1s linear;
-  -ms-transition: all 0.1s linear;
-  -o-transition: all 0.1s linear;
-  transition: all 0.1s linear;
-  position: relative;
-}
-
-#post-nav span.prev {
-  float: left;
-}
-
-#post-nav span.next {
-  float: right;
-}
-
-#post-nav span .arrow {
-  position: relative;
-  padding: 1px;
-}
-
-#post-nav span.prev:hover .arrow {
-  left: -4px;
-}
-
-#post-nav span.next:hover .arrow {
-  right: -4px;
-}
-
-#post-nav span.prev:hover {
-  left: -3px;
-}
-
-#post-nav span.next:hover {
-  right: -3px;
-}
 
 /* Media Queries */
 @media screen and (max-width: 540px) {
@@ -232,10 +89,6 @@ img {
 
   #post-meta {
     margin-top: 60px;
-  }
-
-  #title {
-    font-size: 17px;
   }
 
   #post-list .dates {
@@ -281,12 +134,4 @@ a.symbol {
 
 a.symbol:hover {
   color: #BCD4DA;
-}
-
-code {
-  font-family: Menlo, Monaco, Courier;
-  background-color: #EEE;
-  font-size: 14px;
-  padding: 4px;
-  font-weight: 600;
 }

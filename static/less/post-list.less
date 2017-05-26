@@ -66,8 +66,15 @@
     }
 
     a {
+      color: @color-primary;
+      &:hover, &:focus, &:active {
+        h1, .dates {
+          color: @color-primary-active;
+        }
+      }
+
       h1 {
-        color: @color-primary;
+        color: inherit;
         font-weight: @font-weight-light;
       }
 

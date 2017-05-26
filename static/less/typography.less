@@ -11,6 +11,7 @@ body {
 .text-light {
   color: @color-text-light;
 }
+
 .text-dark {
   color: @color-text-dark;
 }
@@ -30,7 +31,6 @@ ul {
   list-style-position: inside;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   color: @color-heading;
 }
@@ -38,13 +38,16 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 {
   font-weight: @font-weight-light;
 }
+
 h1 {
   font-size: @font-size-base * 2;
   letter-spacing: -1px;
 }
+
 h2 {
   font-size: @font-size-base * 1.5;
 }
+
 h3 {
   font-size: @font-size-base * 1.25;
 }
@@ -52,16 +55,70 @@ h3 {
 h4, h5, h6 {
   font-weight: bold;
 }
+
 h4 {
   font-size: @font-size-base;
 }
 
-h5, h6 {
-  color:  @color-text;
-}
 h5 {
   font-size: @font-size-base * 0.9;
 }
+
 h6 {
   font-size: @font-size-base * 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: @color-primary;
+  transition: color 0.2s;
+
+  &:hover, &:focus, &:active {
+    color: @color-primary-active;
+  }
+}
+
+b, strong {
+  font-weight: 500;
+  color: @color-text-dark;
+}
+
+em, i {
+  font-style: italic;
+}
+
+blockquote {
+  padding-left: @base-margin;
+  border-left: 3px solid @color-border;
+}
+
+hr {
+  display: block;
+  border: none;
+  height: 1px;
+  margin: @base-margin * 2 auto;
+  background: @color-border;
+}
+
+code, span.code {
+  padding: 4px;
+
+  font-family: @font-family-code;
+  font-weight: @font-weight-code;
+  font-size: 0.8em;
+  background-color: @color-border;
+}
+
+pre {
+  font-family: @font-family-code;
+  font-weight: @font-weight-code;
+  color: @color-text;
+
+  white-space: pre-wrap;
+  padding: @base-margin;
+
+  overflow: auto;
+  border-radius: 3px;
+  line-height: 1.5em;
+  background-color: #f8f8f8;
 }

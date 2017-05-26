@@ -9,6 +9,8 @@ googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = "spf13"
 
+Paginate = 2
+
 [params]
 	name = "John Doe"
 	description = "Describe your website"
