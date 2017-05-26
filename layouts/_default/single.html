@@ -20,13 +20,13 @@
 </article>
 
 <footer class="post-meta">
-    {{ with .Site.Params.twitter }}<a href="https://twitter.com/{{ . }}">{{ end }}
-    <img class="avatar" src="{{ "images/avatar.png" | absURL }}">
-    <div class="author-details">
-        <span class="text-dark">{{ .Site.Params.name }}</span>
-        <span class="text-light">{{ .Site.Params.aboutAuthor }}</span>
-    </div>
-    {{ with .Site.Params.twitter }}</a>{{ end }}
+    <a href="{{ "about" | absURL }}">
+        <img class="avatar" src="{{ "images/avatar.png" | absURL }}" />
+        <div class="author-details">
+            <span class="text-dark">{{ .Site.Params.name }}</span>
+            <span class="text-light">{{ .Site.Params.aboutAuthor }}</span>
+        </div>
+    </a>
     <section class="sharing">
         <a class="twitter"
            href="https://twitter.com/intent/tweet?text={{ .Permalink }} - {{ .LinkTitle }} {{ with .Site.Params.twitter }}by @{{ . }}{{ end }}">
